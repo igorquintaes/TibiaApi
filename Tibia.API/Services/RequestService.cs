@@ -204,6 +204,7 @@ namespace Tibia.API.Services
             var value = GetHtmlString(node, xpath);
             if (String.IsNullOrEmpty(value)) return DateTime.MinValue;
 
+            if (value == ErrorMessages.NeverLogedIn) return DateTime.MinValue;
             
             var hourDifference = TimeZoneInfo.Local.BaseUtcOffset.Hours;
 
