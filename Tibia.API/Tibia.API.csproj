@@ -46,8 +46,10 @@
   <ItemGroup>
     <Compile Include="Entities\Achievement.cs" />
     <Compile Include="Entities\Character.cs" />
+    <Compile Include="Entities\CharacterDeath.cs" />
     <Compile Include="Entities\Contracts\IAchievement.cs" />
     <Compile Include="Entities\Contracts\ICharacter.cs" />
+    <Compile Include="Entities\Contracts\ICharacterDeath.cs" />
     <Compile Include="Entities\Contracts\IGuild.cs" />
     <Compile Include="Entities\Contracts\IGuildHouse.cs" />
     <Compile Include="Entities\Contracts\IGuildInvitedCharacter.cs" />
@@ -62,6 +64,7 @@
     <Compile Include="Enums\Sex.cs" />
     <Compile Include="Enums\Vocation.cs" />
     <Compile Include="Exceptions\InvalidWorldException.cs" />
+    <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="ObjectValues\ErrorMessages.cs" />
     <Compile Include="ObjectValues\Links.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

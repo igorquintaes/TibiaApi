@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Tibia.API.Entities.Contracts
 {
-    public interface IAchievement
+    public interface ICharacterDeath
     {
-        int Rarity { get; }
-        string Name { get; }
-        bool IsSecret { get; }
+        DateTime Date { get; }
+        string Message { get; }
     }
 }

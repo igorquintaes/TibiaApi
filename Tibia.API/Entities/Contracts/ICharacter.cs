@@ -17,7 +17,7 @@ namespace Tibia.API.Entities.Contracts
         int AchievementPoints { get; }
         string World { get; }
         string Residence { get; }
-        string MarriedTo { get; }
+        ICharacter MarriedTo { get; }
         IGuildMembership GuildMembership { get; }
         DateTime LastLogin { get; }
         string Comment { get; }
@@ -25,6 +25,9 @@ namespace Tibia.API.Entities.Contracts
 
         // Account Achievements
         ICollection<IAchievement> Achievements { get; }
+
+        // Deaths
+        ICollection<ICharacterDeath> Deaths { get; }
 
         // Account Information
         string LoyalityTitle { get; }

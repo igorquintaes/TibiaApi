@@ -13,7 +13,8 @@ namespace Tibia.API.Services.Contracts
     public interface IConvertService
     {
         Vocation ToVocation(string value);
-
-        
+        Sex ToSex(string value);
+        AccountStatus ToAccountStatus(string value);
+        string ToCharacterNameLink(string value);
     }
 }

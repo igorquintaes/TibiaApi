@@ -7,10 +7,9 @@ using Tibia.API.Entities.Contracts;
 
 namespace Tibia.API.Entities
 {
-    internal class Achievement : IAchievement
+    internal class CharacterDeath : ICharacterDeath
     {
-        public string Name { get; set; }
-        public int Rarity { get; set; }
-        public bool IsSecret { get; set; }
+        public DateTime Date { get; set; }
+        public string Message { get; set; }
     }
 }
